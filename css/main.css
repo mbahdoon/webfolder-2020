@@ -1,0 +1,414 @@
+
+/* d92027,ff9234,ffcd3c,35d0ba*/
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+/*  background-image: url(../image/background-image5.jpg);*/
+   background-color: white;
+   font-family: sans-serif, Arial, Helvetica;
+   font-size: 18px;
+}
+table, th, td {
+  border: 1px solid black;
+  background-color: #ff9234;
+}
+th{
+  color:black;
+}
+td{
+  color:black;
+}
+.navbar-brand{
+  font-size: 30px !important;
+  font-weight: bold;
+  color:white !important;
+  margin-left: 10px;
+  font-style: underline!important;
+  border-radius: 50%;
+}
+.call-us-text p{
+  font-size: 20px !important;
+  color:white !important;
+}
+.logo1 img{
+  height: 70px !important;
+  width:  70px !important;
+  background-color: #d92027;
+}
+.navbar {
+  background-color:#d92027!important;
+  width: 100%;
+  position:fixed;
+  z-index: 1;
+}
+.navbar-nav .nav-item{
+  font-size: 1rem;
+  font-style: oblique;
+  font-weight: bold;
+  color:white !important;
+
+}
+.navbar-nav .nav-item .nav-link{
+  color:white !important;
+}
+.navbar-nav .nav-item .nav-link:hover{
+  color:red !important;
+}
+.navbar-toggler-icon{
+  height: 50px;
+  width: 50px;
+  color:#fff;
+  font-size: 20px !important;
+  background-color: #35d0ba !important;
+  border:none!important;
+}
+/* top section starts - edmonton city background and company name*/
+#top-section{
+    background-image: url(../image/edmonton-city.jpg);
+    
+    height: 100%;
+    padding-top: 90px;
+
+}
+
+.company-name{
+  background-image: url(../image/service4-background.jpg);
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  display: inline-block;
+
+}
+.company-name h3{
+  font-size: 2rem; /*same as 2.5 rem as 1rem is equal to 16px*/
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px green;
+  color:white;
+}
+/*top-section ends here */
+
+
+/*dots that seperates sections*/
+#line-section{
+
+height: 50px;
+
+}
+/*dots styling */
+.dot{
+
+  height: 10px;
+  width: 10px;
+  background-color:#d92027;
+  border-radius: 50px;
+  display:inline-block;
+  margin-top: 10px;
+}
+
+/*services section starts here  styling*/
+#services {
+  background-image: url(../image/background-image5.jpg);
+  width: 100%;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  animation: fadeIn ease 4s;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+.card-1 {
+background-image: url(../image/service2-background.jpg);
+  width: 150px;
+  height: 250px;
+  margin: 10px;
+  border-top: 2px solid #d92027;
+  box-shadow: 5px 10px 18px #35d0ba;;
+  border-radius: 20%;
+}
+.card-1 h3{
+  font-size: 20px;
+  color:white!important;
+  padding-top: 20px;
+  padding-left: 10px;
+
+}
+
+.custom-list {
+
+  margin-top: 20px;
+  margin-left: 10px;
+ list-style-type: none;
+
+}
+.custom-list li{
+  color:white !important;
+  padding:5px;
+}
+.custom-list li::before {
+  content: '✓';
+  color:red;
+}
+
+/*Service box styling*/
+.general-box{
+  width: 200px;
+  height: 100px;
+  padding:10px;
+  margin-top: 20px;
+  border-top: 4px solid #35d0ba;
+  box-shadow: 5px 10px 18px grey;
+  border-radius: 40%;
+
+}
+.general-box h3{
+  font-size: 16px !important;
+  color:white bold;
+
+}
+.about-us p {
+  font-size: 18px !important;
+  font-family: sans-serif;
+}
+
+.general-box:hover{
+  background: #35d0ba;
+  cursor: pointer;
+  transition: 0.7s;
+
+}
+.general-box h4{
+  font-size: 20px;
+  color:white !important;
+}
+.general-box img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+}
+
+.general-box2{
+  background-image: url(../image/background-image5.jpg);
+  width: 100%;
+
+  margin-top: 20px;
+  border-top: 4px solid #35d0ba;
+  box-shadow: 5px 10px 18px grey;
+}
+.general-box2 h4{
+  font-size: 20px !important;
+  color:white;
+}
+.general-box2 h5{
+  font-size: 20px !important;
+  color:white;
+}
+
+.general-box2 p{
+  font-size: 18px !important;
+  font-family: sans-serif;
+  color:white!important;
+}
+
+.general-box2{
+  animation:transitionin s;
+
+}
+@keyframes transitionin{
+  from{
+    opacity:0;
+    transform:rotateX(-10deg);
+  }
+  to{
+    opacity:1;
+    transform:rotateX(0);
+
+  }
+}
+
+.general-box2 h4::after{
+  content :'';
+  background: #35d0ba;
+  display:block;
+  height:3px;
+  width: 170px;
+  margin:5px auto 5px;/*margin top , left and right  and bottom*/
+}
+
+.fa-file-code {
+  background-color: white !important;
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  padding-top: 20px;
+  color:brown !important;
+}
+.follow{
+
+  padding:10px;
+  margin:15px;
+}
+.follow p{
+  font-size: 18px;
+  color:white bold;
+}
+.follow b{
+  font-size: 18px;
+  color:white !important;
+}
+.getSocial{
+  font-size: 18px;
+  color:white !important;
+}
+.follow .fa{
+
+  font-size: 18px;
+  color:white !important;
+}
+
+.contact-icon fa{
+  margin:10px;
+  font-weight: bold;
+  color:white !important;
+
+}
+
+.table{
+  background-color: grey;
+}
+.web-image img{
+  height: 200px;
+  width: 250px;
+  border-radius: 50%;
+
+}
+.general-box h3{
+  font-size: 18px;
+  color:black !important;
+  font-family: sans-serif;
+}
+.general-box2 img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+}
+/*about us */
+#about {
+  /*color:#555;*/
+  background-image: url(../image/background-image5.jpg);
+  color :sans-serif, Arial, Helvetica;
+  font-size: 15px;
+  line-height: 1.6;
+  color:white !important;
+}
+#about h3{
+  text-align:center;
+  color:white !important;
+  padding-bottom: 10px;
+
+}
+
+#about h3::after{
+  content :'';
+  background: #35d0ba !important;
+  display:block;
+  height:3px;
+  width: 100px;
+  margin:5px auto 5px;/*margin top , left and right  and bottom*/
+}
+
+
+.java1 img{
+  height: 200px;
+  width: 400px;
+}
+.announcement h3{
+  font-size: 20px;
+  color:blue !important;
+  background-color: #ff9234;
+}
+/*.carousel-background{
+  background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url(../image/edmonton-city.jpg);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+
+  /*animation: slide 10s infinite;*/
+  }
+
+  /*keyframes animations*/
+  /*@keyframes slide{
+    0%{ background-image: url(../image/html-css-js.jpg);}
+    33%{ background-image: url(../image/database.jpg);}
+    25%{background-image: url(../image/sql.jpg);}
+    25%{background-image: url(../image/java.png);}
+  }*/
+/*services */
+
+#east-africa{
+  background-image: url(../image/background-image5.jpg);
+  width: 100%;
+
+}
+.east-africa-div{
+  background-color: #35d0ba !important;
+}
+
+#content-section{
+  background-image: url(../image/background-image5.jpg);
+  margin-top: 30px;
+}
+/* ::after h4 of content section*/
+#content-section h4{
+  text-align:center;
+  color:white !important;
+  padding-bottom: 10px;
+  margin-top:15px;
+
+}
+#content-section h4::after{
+  content :'';
+  background: #35d0ba!important;
+  display:block;
+  height:3px;
+  width: 170px;
+  margin:5px auto 5px;/*margin top , left and right  and bottom*/
+}
+#content-section p{
+  color : white !important;
+  line-height: 1.6;
+}
+
+#contact-us{
+  background-image: url(../image/background-image5.jpg);
+}
+#contact-us h2::after{
+  content:'';
+  background: #35d0ba!important;
+  display:block;
+  height:3px;
+  width: 170px;
+  margin:70px auto 5px;
+}
+.btn{
+  background-color: #d92027 !important;
+  font-size: 18px;
+}
+#footer{
+background-color:#d92027!important;
+
+}
+.footer h5{
+  color:white;
+}
